@@ -1,56 +1,161 @@
-# Welcome to your Expo app 👋
+# 🏠 GiveNest
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+### _Bridging donors with orphanages — one kind act at a time._
 
-## Get started
+<br/>
 
-1. Install dependencies
+> GiveNest is an open-source mobile app that connects **donors** with **orphanages** to facilitate donations of clothes, toys, books, food, and other essentials — making giving simple, transparent, and meaningful.
 
-   ```bash
-   npm install
-   ```
+---
 
-2. Start the app
+## 💡 The Problem
 
-   ```bash
-   npx expo start
-   ```
+Millions of children in orphanages lack basic necessities — yet many donors willing to help don't know _who_ to reach, _what_ is needed, or _how_ to get items there. GiveNest solves this with a simple, trusted platform.
 
-In the output, you'll find options to open the app in a
+---
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## ✨ Features
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+### For Donors
 
-## Get a fresh project
+- 🔍 **Browse orphanages** by city, category of need, or urgency
+- 📦 **Pledge donations** — clothes, toys, books, food & more
+- 💬 **Contact directly** with orphanage coordinators
+- 📊 **Track your impact** — history of donations made
+- 🔔 **Get notified** when your donation is confirmed or received
 
-When you're ready, run:
+### For Orphanages
+
+- 🏠 **Create a verified profile** with photos, location & about section
+- 📋 **Post needs** with category, quantity, and urgency level
+- ✅ **Manage incoming pledges** — accept, schedule, and confirm
+- 📈 **Dashboard** to track all donations at a glance
+
+### General
+
+- 🔐 Role-based auth (Donor / Orphanage)
+- 🗺️ Map view to discover nearby orphanages
+- 📱 Works on Android ( iOS work in progress)
+
+---
+
+## 📸 Screenshots
+
+> Coming soon — UI is actively being designed.
+
+---
+
+## 🛠️ Tech Stack
+
+| Layer              | Technology                        |
+| ------------------ | --------------------------------- |
+| Framework          | React Native + Expo (Expo Router) |
+| Language           | TypeScript                        |
+| State Management   | Zustand                           |
+| Backend & Auth     | Node.js                           |
+| Database           | MongoDb                           |
+| Storage            | Cloudinary                        |
+| Maps               | `react-native-maps`               |
+| Push Notifications | Expo Notifications                |
+| UI Components      | Custom + NativeWind (TailwindCSS) |
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+Make sure you have the following installed:
+
+- [Node.js](https://nodejs.org/) (v18 or higher)
+- [Expo CLI](https://docs.expo.dev/get-started/installation/)
+- [Git](https://git-scm.com/)
+
+### 1. Clone the Repository
 
 ```bash
-npm run reset-project
+git clone https://github.com/tanmayR18/givenest.git
+cd givenest
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+### 2. Install Dependencies
 
-### Other setup steps
+```bash
+npm install
+```
 
-- To set up ESLint for linting, run `npx expo lint`, or follow our guide on ["Using ESLint and Prettier"](https://docs.expo.dev/guides/using-eslint/)
-- If you'd like to set up unit testing, follow our guide on ["Unit Testing with Jest"](https://docs.expo.dev/develop/unit-testing/)
-- Learn more about the TypeScript setup in this template in our guide on ["Using TypeScript"](https://docs.expo.dev/guides/typescript/)
+### 3. Set Up Environment Variables
 
-## Learn more
+Create a `.env` file in the root directory:
 
-To learn more about developing your project with Expo, look at the following resources:
+```env
+EXPO_PUBLIC_CLOUDINARY_URL=your_cloudinary_project_url
+```
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+> You can find these in your cloudinary project under **Settings → API**.
 
-## Join the community
+### 4. Build the android folder
 
-Join our community of developers creating universal apps.
+```bash
+npx expo run:android
+```
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+### 5. Start the App
+
+> Once built completely, from the next time direct using this command to start the project
+
+```bash
+npm run android
+```
+
+---
+
+## 🗺️ Roadmap
+
+- [x] Project setup & architecture planning
+- [ ] Authentication (donor & orphanage roles)
+- [ ] Orphanage profile creation & verification flow
+- [ ] Needs posting & browsing
+- [ ] Donation pledge & tracking
+- [ ] Seamless contact between orphanage owner and donor
+- [ ] Map view
+- [ ] Push notifications
+- [ ] Admin panel for orphanage verification
+- [ ] Analytics dashboard
+
+---
+
+## 🤝 Contributing
+
+Contributions are warmly welcome! This is a community-driven project with a real social impact.
+
+1. Fork the repository
+2. Create your feature branch: `git checkout -b feature/your-feature-name`
+3. Commit your changes: `git commit -m 'feat: add some feature'`
+4. Push to the branch: `git push origin feature/your-feature-name`
+5. Open a Pull Request
+
+Please read [CONTRIBUTING.md](./CONTRIBUTING.md) for details on our code of conduct and development guidelines. Incase the CONTRIBUTING.md is not created contact the repo owner, thank you.
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License** — see the [LICENSE](./LICENSE) file for details.
+
+---
+
+## 🙏 Acknowledgements
+
+- Inspired by the countless children who deserve a warmer world
+- Built with love using [Expo](https://expo.dev/) and [Supabase](https://supabase.com/)
+
+---
+
+<div align="center">
+
+Made with ❤️ for the kids who deserve it most.
+
+**If you find this project meaningful, please give it a ⭐ on GitHub!**
+
+</div>
