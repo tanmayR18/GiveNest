@@ -74,7 +74,7 @@ Make sure you have the following installed:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/givenest.git
+git clone https://github.com/tanmayR18/givenest.git
 cd givenest
 ```
 
@@ -117,7 +117,7 @@ npm run android
 - [ ] Orphanage profile creation & verification flow
 - [ ] Needs posting & browsing
 - [ ] Donation pledge & tracking
-- [ ] Seamless contact between orphange owner and donor
+- [ ] Seamless contact between orphanage owner and donor
 - [ ] Map view
 - [ ] Push notifications
 - [ ] Admin panel for orphanage verification
